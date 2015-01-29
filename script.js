@@ -28,11 +28,52 @@ var compare = function(choice1, choice2) {
         if (choice2 === "paper") {
             console.log("Paper wins!");
         }
+        else if (choice2 === "scissors") {
+            console.log("Rock wins!");
+        }
+        else if (choice2 === "rope") {
+            console.log("Rope wins!");
+        }
+    }
+    if (choice1 === "paper") {
+        if (choice2 === "rock") {
+            console.log("Paper wins!");
+        }
+        else if (choice2 === "scissors") {
+            console.log("Scissors wins!");
+        }
+        else if (choice2 === "rope") {
+            console.log("Paper wins!");
+        }
+    }
+    if (choice1 === "scissors") {
+        if (choice2 === "rock") {
+            console.log("Rock wins!");
+        }
+        else if (choice2 === "paper") {
+            console.log("Scissors wins!");
+        }
+        else if (choice2 === "rope") {
+            console.log("Scissors wins!");
+        }
+    }
+    if (choice1 === "rope") {
+        if (choice2 === "rock") {
+            console.log("Rope wins!");
+        }
+        else if (choice2 === "paper") {
+            console.log("Paper wins!");
+        }
+        else if (choice2 === "scissors") {
+            console.log("Scissors wins");
+        }
     }
 };
 
-// finish up compare function
+
 //how to get player to be able to play again after tie and win (or lose)
 //how to ask again if player hasn't chosen rock paper scissors or rope
 
-
+var playAgain = function (response) {
+    if (response === "y") {
+        
