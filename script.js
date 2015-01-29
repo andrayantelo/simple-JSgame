@@ -31,6 +31,8 @@ var compare = function(choice1, choice2) {
     }
 };
 
-
+// finish up compare function
+//how to get player to be able to play again after tie and win (or lose)
+//how to ask again if player hasn't chosen rock paper scissors or rope
 
 
