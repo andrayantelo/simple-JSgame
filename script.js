@@ -11,6 +11,7 @@ var playAgain = function () {
 var compare = function(choice1, choice2) {
     if (choice1 === choice2) {
         console.log("It's a tie!");
+        return "tie";
         
     }
         
@@ -94,8 +95,8 @@ do {
 
         console.log("Computer:" + computerChoice);
     
-        compare(userChoice, computerChoice);
-        
+        var comparison = compare(userChoice, computerChoice);
+    
         var playagain = playAgain();
      }   
      else {
@@ -108,3 +109,4 @@ while (playagain === "y");
 
 
 // how to ask player playagain again if they didn't type y or n
+// how to ask for a weapons choice again if there is a tie
