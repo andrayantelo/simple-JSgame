@@ -10,63 +10,63 @@ var playAgain = function () {
 var compare = function(choice1, choice2) {
     if (choice1 === choice2) {
         console.log("It's a tie!");
-        playAgain();
+        
     }
         
     else if (choice1 === "rock") {
         if (choice2 === "paper") {
             console.log("Paper wins!");
-            playAgain();
+            
         }
         else if (choice2 === "scissors") {
             console.log("Rock wins!");
-            playAgain();
+            
         }
         else if (choice2 === "rope") {
             console.log("Rope wins!");
-            playAgain();
+            
         }
     }
     if (choice1 === "paper") {
         if (choice2 === "rock") {
             console.log("Paper wins!");
-            playAgain();
+            
         }
         else if (choice2 === "scissors") {
             console.log("Scissors wins!");
-            playAgain();
+            
         }
         else if (choice2 === "rope") {
             console.log("Paper wins!");
-            playAgain();
+            
         }
     }
     if (choice1 === "scissors") {
         if (choice2 === "rock") {
             console.log("Rock wins!");
-            playAgain();
+            
         }
         else if (choice2 === "paper") {
             console.log("Scissors wins!");
-            playAgain();
+            
         }
         else if (choice2 === "rope") {
             console.log("Scissors wins!");
-            playAgain();
+            
         }
     }
     if (choice1 === "rope") {
         if (choice2 === "rock") {
             console.log("Rope wins!");
-            playAgain();
+            
         }
         else if (choice2 === "paper") {
             console.log("Paper wins!");
-            playAgain();
+            
         }
         else if (choice2 === "scissors") {
             console.log("Scissors wins");
-            playAgain();
+            
         }
     }
 };
@@ -92,12 +92,14 @@ do {
     console.log("Computer:" + computerChoice);
     
     compare(userChoice, computerChoice);
+    var playagain = playAgain();
+    
 }
 
-while (playAgain === "y");
+while (playagain === "y");
 
 
-//how to get player to be able to play again after tie and win (or lose)//
+
 //how to ask again if player hasn't chosen rock paper scissors or rope//
 
         
