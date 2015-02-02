@@ -1,10 +1,11 @@
 // rock paper scissors rope game//
 
+var weapons = ['rock', 'paper', 'scissors', 'rope'];
 
 var playAgain = function () {
        var response = prompt("Do you wish to play again? Y or N?");
-       return response;
-    }
+           return response;
+       };
         
 
 var compare = function(choice1, choice2) {
@@ -73,33 +74,37 @@ var compare = function(choice1, choice2) {
 
 do {
     var userChoice = prompt("Rock, paper, scissors, or rope?");
-
-    var computerChoice = Math.random()
-
-    if (computerChoice < 0.25) {
-        computerChoice = "rock";
-    }
-    else if (computerChoice > 0.25 && computerChoice < 0.50) {
-        computerChoice = "paper";
-    }
-    else if (computerChoice > 0.50 && computerChoice < 0.75) {
-        computerChoice = "scissors";
-    }
-    else if (computerChoice > 0.75 && computerChoice < 1) {
-        computerChoice = "rope";
-    }
-
-    console.log("Computer:" + computerChoice);
     
-    compare(userChoice, computerChoice);
-    var playagain = playAgain();
+    if (weapons.indexOf(userChoice) >=0 ) {
+            
+        var computerChoice = Math.random()
+
+        if (computerChoice < 0.25) {
+            computerChoice = "rock";
+        }
+        else if (computerChoice > 0.25 && computerChoice < 0.50) {
+            computerChoice = "paper";
+        }
+        else if (computerChoice > 0.50 && computerChoice < 0.75) {
+            computerChoice = "scissors";
+        }
+        else if (computerChoice > 0.75 && computerChoice < 1) {
+            computerChoice = "rope";
+        }
+
+        console.log("Computer:" + computerChoice);
     
-}
+        compare(userChoice, computerChoice);
+        
+        var playagain = playAgain();
+     }   
+     else {
+         continue; }
+    }
+    
 
 while (playagain === "y");
 
 
 
-//how to ask again if player hasn't chosen rock paper scissors or rope//
-
-        
+// how to ask player playagain again if they didn't type y or n
